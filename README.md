@@ -10,7 +10,7 @@ implementation files('libs/dmpclient-release.aar')
 ```
 
 ### Manually
-You can download and embed the [framework](https://github.com/brainsland/DMPiOSClientPublic/tree/main/binaries/DMPClient.xcframework) manually.
+You can download and embed the [framework](https://github.com/brainsland/DMPAndroidClientPublic/blob/master/dmp/libs/dmpclient-release.aar) manually.
 
 ## Setup
 Firstly, you need to configure DMPClient SDK by calling `setup` when the app is started, ideally at `Application`'s `onCreate` function:
