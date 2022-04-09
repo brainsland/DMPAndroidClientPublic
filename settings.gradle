@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 rootProject.name = "DMPAndroidClientDemo"
 include ':app'
 include ':dmp'
-include ':lib'

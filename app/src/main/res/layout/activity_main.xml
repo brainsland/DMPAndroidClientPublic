@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_next_screen"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Next Screen" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_scroll_pos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scroll Position = 12"/>
+
+    <Button
+        android:id="@+id/btn_breadcrumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breadcrumb"/>
+
+    <Button
+        android:id="@+id/btn_zonetracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zone Tracker"/>
+
+    <Button
+        android:id="@+id/btn_page_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page User Authorisations"/>
+
+    <Button
+        android:id="@+id/btn_page_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Event"/>
+
+    <Button
+        android:id="@+id/btn_news_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News Article"/>
+
+</LinearLayout>
