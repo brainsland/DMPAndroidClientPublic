@@ -34,12 +34,15 @@ Any page that is needed to be tracked, should use `pageView` function. PageView 
 
 ```kotlin
 override fun onResume() {
-  super.onResume()
-  val request = PageViewRequest(
-    url = "https://example.com/",
-    title = "Main Activity"
-  )
-  pageViewInfo = DMP.pageView(this, request, pageViewInfo)
+    super.onResume()
+    val request = PageViewRequest(
+        url = "https://example.com/",
+        canonicalUrl = "",
+        title = "",
+        referrer = "r",
+        infiniteScrollDepth = 0
+    )
+    DMP.pageView(this, request)
 }
 ```
 
@@ -92,4 +95,14 @@ DMP.newsArticle(
     wordCount = 3
   )
 )
+```
+
+### Gallery
+```kotlin
+DMP.gallery("https://backend.com/image.png", quantity = 10)
+```
+
+### Gallery View
+```kotlin
+DMP.galleryView("https://backend.com/image.png", index = 3)
 ```
