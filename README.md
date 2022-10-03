@@ -56,7 +56,7 @@ DMP.breadcrumb(breadcrumb1 = "b1", breadcrumb2 = "b2", breadcrumb3 = "b3", bread
 
 ### Scroll Position
 ```kotlin
-DMP.scrollPosition(12)
+DMP.scrollPosition(12, limit = 10)
 ```
 
 ### Track Zone
