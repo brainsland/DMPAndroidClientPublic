@@ -16,7 +16,7 @@ You can download and embed the [framework](https://github.com/brainsland/DMPAndr
 Firstly, you need to configure DMPClient SDK by calling `setup` when the app is started, ideally at `Application`'s `onCreate` function:
 
 ```kotlin
-DMP.setup(this, projectId = "usertest", url = "https://backend.com/api", language = "tr")
+DMP.setup(this, projectId = "usertest", url = "https://backend.com/api", language = "tr", appVersion = "1.0.0")
 ```
 
 ## Logging
