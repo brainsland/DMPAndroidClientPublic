@@ -10,7 +10,7 @@ implementation files('libs/dmpclient-release.aar')
 ```
 
 ### Manually
-You can download and embed the [framework](https://github.com/brainsland/DMPAndroidClientPublic/blob/master/dmp/libs/dmpclient-release.aar) manually.
+You can download and embed the [framework](https://github.com/brainsland/DMPAndroidClientPublic/releases/tag/2.0.2) manually. Latest version is 2.0.2.
 
 ## Setup
 Firstly, you need to configure DMPClient SDK by calling `setup` when the app is started, ideally at `Application`'s `onCreate` function:
@@ -105,4 +105,28 @@ DMP.gallery("https://backend.com/image.png", quantity = 10)
 ### Gallery View
 ```kotlin
 DMP.galleryView("https://backend.com/image.png", index = 3)
+```
+
+### Video Data Event
+```kotlin
+DMP.videoEvent(
+    VideoEvent(
+        videoIdentifier = "x8ec6fu",
+        videoLabel = "Yargı yayınlanan yeni bölümü ile izleyiciyi ekrana kilitledi",
+        videoPosterUrl = "https://i4.hurimg.com/i/hurriyet/75/1200x675/61efc8354e3fe01654ed9345.jpg",
+        videoPublishedDate = 1667554992,
+        videoDuration = 300,
+        videoLiveStream = 1
+    )
+)
+```
+
+### Video Track Event
+```kotlin
+DMP.videoTrack(
+    VideoTrack(
+        videoIdentifier = "x8ec6fu",
+        videoCurrentTime = currentTime
+    )
+)
 ```
