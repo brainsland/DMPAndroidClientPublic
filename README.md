@@ -9,6 +9,13 @@ DMPClient Android SDK
 implementation files('libs/dmpclient-release.aar')
 ```
 
+## Proguard
+To enable obfuscation please add following line.
+
+```kotlin
+-keep class com.brainsland.dmpclient.requests.** { *; }
+```
+
 ### Manually
 You can download and embed the [framework](https://github.com/brainsland/DMPAndroidClientPublic/releases/tag/2.0.2) manually. Latest version is 2.0.2.
 
